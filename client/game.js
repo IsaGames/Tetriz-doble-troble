@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  const client = new Colyseus.Client("ws://localhost:2567");
+  const client = new Colyseus.Client("wss://tetris-server-iez8.onrender.com"); // Usa wss para WebSocket seguro
+  // const client = new Colyseus.Client("ws://localhost:2567");
   const room = await client.joinOrCreate("tetris");
 
   const canvas1 = document.getElementById("tetrisCanvas1");
