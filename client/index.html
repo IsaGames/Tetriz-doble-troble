@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tetris Multijugador</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <h1>Tetris Multijugador</h1>
+      <div class="boards">
+        <div class="active-player">
+          <h2>Tu Tablero</h2>
+          <canvas id="tetrisCanvas1" width="300" height="600"></canvas>
+        </div>
+        <div class="opponent-player">
+          <h2>Adversario</h2>
+          <canvas id="tetrisCanvas2" width="150" height="300"></canvas>
+        </div>
+      </div>
+      <p>
+        Score: <span id="score1">0</span> | Adversario:
+        <span id="score2">0</span>
+      </p>
+    </div>
+    <script src="node_modules/colyseus.js/dist/colyseus.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>

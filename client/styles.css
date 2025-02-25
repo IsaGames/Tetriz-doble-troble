@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#game-container {
+  text-align: center;
+}
+
+.boards {
+  display: flex;
+  gap: 20px;
+}
+
+.active-player canvas {
+  border: 2px solid green;
+}
+
+.opponent-player canvas {
+  border: 2px solid red;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin: 5px 0;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 10px;
+}
